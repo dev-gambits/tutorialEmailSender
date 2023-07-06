@@ -17,7 +17,7 @@ import java.util.UUID;
 public class Confirmation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String token;
@@ -34,9 +34,5 @@ public class Confirmation {
         this.user = user;
         this.createdDate = LocalDateTime.now();
         this.token = UUID.randomUUID().toString();
-    }
-
-    public Confirmation() {
-
     }
 }

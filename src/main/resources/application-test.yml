@@ -1,0 +1,13 @@
+# database
+POSTGRES_SQL_USERNAME: postgres
+POSTGRES_SQL_PASSWORD: sideral
+POSTGRES_SQL_HOST: localhost
+POSTGRES_SQL_PORT: 5432
+POSTGRES_SQL_DB: spcloud
+
+## Server
+SERVER_PORT: 7000
+ACTIVE_PROFILE: test
+
+# Command Line Maven
+# mvn spring-boot:run -Dspring.profiles.active=test
